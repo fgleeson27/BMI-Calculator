@@ -42,11 +42,28 @@ public class Calculator
 			weightStatus = "Underweight";
 		}
 		
+		
 		else if (BMI < 25.0) 
 		{
-			
+			weightStatus = "Normal or Healthy Weight";
 		}
-			
+		
+		
+		else if (BMI < 30.0) 
+		{
+			weightStatus = "Overweight";
+		}
+		
+		
+		else if (BMI < 40.0) 
+		{
+			weightStatus = "Obese";
+		}
+		
+		else if (BMI > 40.0) 
+		{
+			weightStatus = "Extremely Obese";
+		}
 		
 		
 		
@@ -55,15 +72,6 @@ public class Calculator
 		System.out.println("Your weight status is " + weightStatus);
 		
 		
-	
-		
-		
-		
-		
-		
-		
-		
-
 	}
 
 }
